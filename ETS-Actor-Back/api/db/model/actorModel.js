@@ -9,7 +9,6 @@ const Actor = db.define(
       primaryKey: true,
       foreignKeyConstraint: false,
       autoIncrement: true,
-      onUpdate: "CASCADE",
       onDelete: "CASCADE",
       hooks: true,
     },
@@ -32,7 +31,7 @@ const Actor = db.define(
 );
 
 const FilmActor = db.define("film_actor", {
-  film_actor_actor_id_fkey: {
+  actor_id: {
     type: DataTypes.INTEGER,
     foreignKeyConstraint: false,
     hooks: true,
