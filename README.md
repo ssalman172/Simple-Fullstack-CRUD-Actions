@@ -10,7 +10,7 @@ Repository Evaluasi Tengah Semester mata kuliah Pengembangan Web (Praktek) 2021
 # clone repository
 git clone https://github.com/ssalman172/191524059_3B_SalmanShalahuddin.git
 
-# run both frontend & backend as mentioned in the those folders
+# run both frontend & backend as mentioned inside of those folders
 
 # run the app in localhost:8080
 ```
