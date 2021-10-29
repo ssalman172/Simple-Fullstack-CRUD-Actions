@@ -59,6 +59,7 @@ exports.deleteActor = async (req, res) => {
       where: {
         actor_id: id,
       },
+      cascade: true,
     });
     res.status(200).send("Data deleted");
   } catch (error) {
@@ -69,7 +70,8 @@ exports.deleteActor = async (req, res) => {
 exports.deleteAllActor = async (req, res) => {
   try {
     await Actor.destroy({
-      where: {},
+      truncate: true,
+      cascade: true,
     });
     res.status(200).send("All data deleted");
   } catch (error) {

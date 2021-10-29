@@ -53,7 +53,6 @@ export async function deleteAllActor() {
 
 export async function deleteAllFilmActor() {
   try {
-    return axios.delete(`${BASE_URL}/filmActor/delete`);
   } catch (error) {
     console.log(error);
   }

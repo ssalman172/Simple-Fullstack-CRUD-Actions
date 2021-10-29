@@ -27,14 +27,3 @@ exports.deleteFilmActor = async (req, res) => {
     res.status(500).send(error.message);
   }
 };
-
-exports.deleteAllFilmActor = async (req, res) => {
-  try {
-    await FilmActor.destroy({
-      truncate: true,
-    });
-    res.status(200).send("All data deleted");
-  } catch (error) {
-    res.status(500).send(error.message);
-  }
-};
