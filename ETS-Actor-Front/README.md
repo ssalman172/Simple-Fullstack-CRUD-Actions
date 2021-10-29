@@ -1,5 +1,4 @@
-# ets-actor-front
-
+# Actor CRUD Frontend
 > ETS WebDev Praktek (Salman - 191524059)
 
 ## Build Setup
