@@ -1,4 +1,5 @@
 <template>
+  <!-- The code below will be sent and used by Actor.vue -->
   <div class="container">
     <div>
       <table class="actor-list">
@@ -17,6 +18,7 @@
       </table>
     </div>
 
+    <!-- Extend interface for update data field -->
     <div class="modal center" v-if="modalUpdate">
       <h4 class="margin0">
         {{ `Edit data for ${first_name} ${last_name}` }}
@@ -24,18 +26,8 @@
       <div class="center">
         <form @submit.prevent="handleAddActor" class="flex center">
           <div class="flex-column">
-            <input
-              v-model="firstName"
-              class="box-shadow"
-              type="text"
-              placeholder="First Name"
-            />
-            <input
-              v-model="lastName"
-              class="box-shadow"
-              type="text"
-              placeholder="Last Name"
-            />
+            <input v-model="firstName" type="text" placeholder="First Name" />
+            <input v-model="lastName" type="text" placeholder="Last Name" />
           </div>
         </form>
         <button @click="handleUpdate(actor_id)" type="submit">
@@ -66,6 +58,7 @@ export default {
       modalUpdate: false
     };
   },
+  // Frontend & Backend conection methods (handlers)
   methods: {
     async handleUpdate(actor_id) {
       let currentDate = new Date();
