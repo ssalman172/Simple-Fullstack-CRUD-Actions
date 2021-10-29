@@ -48,6 +48,11 @@ export default {
   padding: 0;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .mr1 {
   margin-right: 1rem;
 }

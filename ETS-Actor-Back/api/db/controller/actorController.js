@@ -69,7 +69,7 @@ exports.deleteActor = async (req, res) => {
 exports.deleteAllActor = async (req, res) => {
   try {
     await Actor.destroy({
-      truncate: true,
+      where: {},
     });
     res.status(200).send("All data deleted");
   } catch (error) {
