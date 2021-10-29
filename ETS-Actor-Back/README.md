@@ -11,4 +11,8 @@ npm install
 
 # database server run at localhost:3000 by default
 npm run start
+
+# set database connection
+create .env file
+put DB_STRING value inside .env file on root folder
 ```
